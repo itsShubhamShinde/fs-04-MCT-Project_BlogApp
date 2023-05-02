@@ -10,14 +10,11 @@ function App() {
   const {LoggedIn}=useSelector((state)=> state.counter)
   return (
     <div className="App">
-      
       <Routes>
         <Route path="/" element={LoggedIn ?  <Home/> :<Login/>}></Route>
         <Route path='/profile' element={LoggedIn ?  <ProfilePage/> :<Login/>}></Route>
-        <Route path='/readPage' element={LoggedIn ?  <ReadBlogPage/> :<Login/>}></Route>
-        
+        <Route path='/readPage' element={LoggedIn ?  <ReadBlogPage/> :<Login/>}></Route> 
       </Routes>
-
     </div>
   );
 }

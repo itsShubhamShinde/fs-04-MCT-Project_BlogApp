@@ -1,19 +1,16 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import './Login.css'
 import { FaUserAlt } from "react-icons/fa";
 import { VscSearch } from "react-icons/vsc";
 import { useDispatch, useSelector } from 'react-redux';
 import { FeatchGitData, SetLogginedIn, FeatchImageData } from '../../Redux/reducer';
 import { useNavigate } from 'react-router-dom';
-
 const Login = () => {
   const nagavite = useNavigate()
-  const { LoginData} = useSelector((state) => state.counter)
+  const { LoginData } = useSelector((state) => state.counter)
   const dispatch = useDispatch()
   const [input, setInput] = useState("")
   const [password, setPasswod] = useState("")
-
-
   const checkfunc = () => {
     if (LoginData.user === input && LoginData.pass === password) {
       dispatch(SetLogginedIn(true))
@@ -22,7 +19,6 @@ const Login = () => {
       alert("Enter Proper Credentials")
     }
   }
-
   const gitData = async () => {
     const res = await fetch("https://api.github.com/search/users?q=itsShubhamShinde")
     const data = await res.json()
@@ -33,7 +29,6 @@ const Login = () => {
     const data = await res.json()
     dispatch(FeatchImageData(data))
   }
-
   return (
     <div className='LoginOuterDiv'>
       <div className="loginDiv">
@@ -67,7 +62,6 @@ const Login = () => {
               </div>
             </div>
             <div className="buttonDiv">
-
               <button onClick={() => {
                 checkfunc()
                 gitData()

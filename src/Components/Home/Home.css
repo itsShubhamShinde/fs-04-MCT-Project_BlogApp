@@ -1,11 +1,8 @@
 .homeOuterDiv {
-    /* border: 2px solid blue; */
     height: 100vh;
     width: 100%;
 }
-
 .HomebuttonDiv {
-    /* border: 2px solid red; */
     height: 10%;
     width: 100%;
     display: flex;
@@ -17,7 +14,6 @@
     padding-left: 50px;
 }
 .createButton{
-    /* border: 2px solid red; */
     height: 100%;
     width: 20%;
     display: flex;
@@ -26,8 +22,6 @@
     text-decoration: none;
     margin-right: 50px;
 }
-
-
 .createButton button {
     height: 80%;
     width: 100%;
@@ -39,9 +33,7 @@
     color: white;
     font-weight: 500;
 }
-
 .userDetailDiv {
-    /* border: 2px solid blue; */
     height: 90%;
     width: 100%;
     overflow-y: scroll;
@@ -50,7 +42,6 @@
     flex-wrap: wrap;
 }
 .UserCardDiv{
-    /* border: 2px solid blue; */
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     height: 500px;
@@ -59,7 +50,6 @@
     position: relative;
 }
 .cartBagImgDiv{
-    /* border: 2px solid red; */
     height: 40%;
     border-radius: 10px;
     width:100%;
@@ -69,7 +59,6 @@
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
 }
 .AvtarImgDiv{
     height: 60px;
@@ -85,19 +74,15 @@
     border-radius: 50px;
 }
 .cartDetailDiv{
-    /* border: 2px solid red; */
     height: 60%;
     width:90%;
     margin: auto;
 }
 .cardTitleDiv{
-    /* border: 2px solid green; */
     height: 80%;
     width: 100%;
-    /* padding-left: 20px; */
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     align-items: flex-start;
 }
 .cardTitleDiv h2{
@@ -108,7 +93,6 @@
     color:Black;
 }
 .cardTitleDiv p{
-    /* border: 2px solid blue; */
     padding: 0;
     margin-top: 10px;
 }
@@ -117,7 +101,6 @@
     width: 100%;
 }
 .iconDiv{
-    /* border: 2px solid green; */
     height: 50%;
     width: 100%;
     display: flex;
@@ -128,4 +111,25 @@
 }
 .iconDiv h3, p{
     padding-left: 20px;
+}
+@media screen and (max-width:700px) {
+    .HomebuttonDiv h1{
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+    .createButton{
+        width: 30%;
+        margin-right: 10px;
+    }    
+    .createButton button {
+        height: 70%;
+        width: 100%;
+        font-size: .7rem;
+    }
+}
+@media screen and (min-width:700px) and (max-width:1440px){
+    .createButton{
+        width: 30%;
+        margin-right: 30px;
+    }
 }

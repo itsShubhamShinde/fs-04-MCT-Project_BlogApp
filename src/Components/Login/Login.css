@@ -1,17 +1,13 @@
 .LoginOuterDiv {
-    /* border: 2px solid blue; */
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #1a4e4d; */
     background-image: url('../Img/bg10.png');
     background-size: 100% 100%;
 }
-
 .loginDiv {
-    /* border: 2px solid blue; */
     height: 60%;
     width: 50%;
     margin-left: 200px;
@@ -20,25 +16,23 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .profileDiv {
-    /* border: 2px solid yellow; */
     height: 100%;
     width: 50%;
-   
+
 }
-.profileUpperDiv{
-    /* border: 2px solid red; */
+.profileUpperDiv {
     height: 15%;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.profileUpperDiv p{
+.profileUpperDiv p {
     background-color: white;
-    width: 50%;
-    height: 50%;padding-left: 30px;
+    width: 80%;
+    height: 50%;
+    padding-left: 30px;
     font-weight: 500;
     display: flex;
     justify-content: flex-start;
@@ -46,8 +40,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
-.profileLowerDiv{
-    /* border: 2px solid red; */
+.profileLowerDiv {
     height: 85%;
     width: 100%;
     display: flex;
@@ -57,12 +50,12 @@
     color: white;
     padding-bottom: 50px;
 }
-.profileLowerDiv img{
+.profileLowerDiv img {
+    height: 30%;
+    width: 40%;
     border-radius: 50%;
 }
-
 .loginFormDiv {
-    /* border: 2px solid red; */
     border-radius: 10px;
     height: 100%;
     width: 50%;
@@ -72,16 +65,12 @@
     justify-content: space-around;
     align-items: center;
 }
-
 .loginFormDiv h1 {
-    /* border: 2px solid green; */
     height: 10%;
     color: #45b5b4;
     font-weight: 900;
 }
-
 .formDiv {
-    /* border: 2px solid green; */
     height: 60%;
     width: 100%;
     display: flex;
@@ -89,19 +78,15 @@
     justify-content: space-around;
     align-items: center;
 }
-
 .inputDiv {
-    /* border: 2px solid blue; */
     height: 40%;
     width: 80%;
 }
-
 .inputDiv label {
     font-size: 1.5rem;
     color: #45b5b4;
     font-weight: 500;
 }
-
 .inputBoxWrap {
     border: 2px solid #45b5b4;
     border-top: none;
@@ -113,7 +98,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
 .inputBoxWrap input {
     height: 100%;
     width: 90%;
@@ -121,24 +105,20 @@
     border: none;
     outline: none;
     padding-left: 10px;
-    
 }
-
 .icon {
     font-size: 1.6rem;
     color: #45b5b4;
-    
-}
 
-.buttonDiv{
-    /* border: 2px solid red; */
+}
+.buttonDiv {
     height: 30%;
     width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.buttonDiv button{
+.buttonDiv button {
     height: 70%;
     width: 100%;
     border-radius: 10px;
@@ -149,11 +129,68 @@
     color: white;
     font-weight: 500;
 }
-.forgetDiv{
-    /* border: 2px solid blue; */
+.forgetDiv {
     height: 15%;
     width: 100%;
     color: #45b5b4;
     text-align: end;
     padding-right: 20px;
+}
+@media screen and (max-width:700px) {
+    .LoginOuterDiv {
+        height: 100vh;
+        width: 100%;
+        background-image: url('../Img/mobbg2.jpg');
+        background-size: 100% 100%;
+    }
+    .loginDiv {
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .profileDiv {
+        height: 50%;
+        width: 100%;
+
+    }
+    .profileUpperDiv {
+        height: 10%;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .profileUpperDiv p {
+        width: 60%;
+        height: 100%;
+    }
+    .profileLowerDiv {
+        padding-bottom: 0;
+    }
+    .profileLowerDiv img {
+        height: 30%;
+        width: 20%;
+        border-radius: 50%;
+    }
+    .loginFormDiv {
+        border-radius: 15px;
+        height: 70%;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:700px) and (max-width:1440px) {
+    .LoginOuterDiv {
+        background-size: 100% 100%;
+    }
+    .loginDiv {
+        width: 60%;
+    }
+    .profileLowerDiv img {
+        width: 30%;
+        border-radius: 50%;
+    } 
 }

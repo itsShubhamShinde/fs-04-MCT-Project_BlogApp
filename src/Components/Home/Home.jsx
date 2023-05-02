@@ -5,8 +5,6 @@ import './Home.css'
 import { FaUserAlt } from "react-icons/fa";
 import { SlCalender } from "react-icons/sl";
 import { SetReadEle } from '../../Redux/reducer';
-
-
 const Home = () => {
   const { userData } = useSelector((state) => state.counter)
  const dispatch = useDispatch()
@@ -30,7 +28,6 @@ const Home = () => {
                   <img src={ele.avtar} alt="" height="100%" width="100%" />
                 </div>
                 <div className="cartDetailDiv">
-
                   <div className="cardTitleDiv">
                     <Link to="/readPage" onClick={()=> dispatch(SetReadEle(ele))}><h2>{ele.title}</h2></Link>
                     <p >{ele.discription}</p>
@@ -48,9 +45,6 @@ const Home = () => {
                 </div>
               </div>
             })
-
-
-
             : <h2>No Data Present</h2>
         }
       </div>
