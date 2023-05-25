@@ -1,8 +1,7 @@
 # Hosted Link : https://fs-04-mct-project-blog-app.vercel.app/
 
-## Details :
-   - Design a Blog Application using reactJS.
-
+## Overview :
+   - The Blog Application is a web-based platform built using ReactJS that allows users to create and share their blogs. It provides a user-friendly interface for creating, editing, and managing blog posts, and also includes a home page that displays all the created blogs for easy access and discovery.
 ## Using Functionality :
   - React Components.
   - Routing and nested routing.
