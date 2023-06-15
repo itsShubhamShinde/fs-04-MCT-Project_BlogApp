@@ -68,6 +68,7 @@ const Login = () => {
                 SearchData()
               }}>Login</button>
             </div>
+        <p style={{color:'red' , fontSize:'1.5ch'}}>Use admin and admin123 to login Credentials resp..!</p>
           </form>
           <div className="forgetDiv">
             <p>Forget</p>

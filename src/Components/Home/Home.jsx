@@ -22,7 +22,8 @@ const Home = () => {
             userData.map((ele,id) => {
               return <div className="UserCardDiv">
                 <div className="cartBagImgDiv">
-                  <img src={ele.BackImg} alt="" />
+                  
+                  <Link to="/readPage" onClick={()=> dispatch(SetReadEle(ele))}><img src={ele.BackImg} alt="" /></Link>
                 </div>
                 <div className="AvtarImgDiv">
                   <img src={ele.avtar} alt="" height="100%" width="100%" />
